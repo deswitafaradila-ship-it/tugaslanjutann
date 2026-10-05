@@ -1,0 +1,376 @@
+/* Reset Basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* 1. Announcement Bar */
+.top-bar {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+/* 2. Header & Navbar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    font-style: italic;
+}
+
+.nav-links a, .nav-right a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin: 0 10px;
+}
+
+/* 3. Hero Section Main Banner */
+.hero-section {
+    position: relative;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* 4. Fragrance 5 Grid */
+.fragrance-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.fragrance-card {
+    position: relative;
+    aspect-ratio: 1 / 1.25;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    border-right: 1px solid #e5e5e5;
+}
+
+.fragrance-card:last-child {
+    border-right: none;
+}
+
+.fragrance-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-caption {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #666666;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+/* 5. Split Section (Makeup vs Balms) */
+.split-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 30px;
+}
+
+.split-card {
+    position: relative;
+    aspect-ratio: 1 / 0.8;
+    background: #f7f7f7;
+    overflow: hidden;
+}
+
+.split-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.split-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 6. Bestsellers Section */
+.bestsellers-section {
+    padding: 40px 30px 60px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.shop-now-link {
+    font-size: 12px;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.product-card {
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-box {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background-color: #f9f9f9;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ffe5ec;
+    color: #000000;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 3px 6px;
+    letter-spacing: 0.5px;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-details h3 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.product-details .desc {
+    font-size: 12px;
+    color: #777777;
+    margin-top: 2px;
+}
+
+.product-details .price {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.swatches {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+.swatch {
+    width: 22px;
+    height: 12px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.swatch-more {
+    font-size: 11px;
+    color: #666;
+    margin-left: 4px;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ffffff;
+    border: none;
+    border-top: 1px solid #eeeeee;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #f9f9f9;
+}
+
+/* 7. Footer Section */
+.footer-container {
+    background-color: #fcf5f7;
+    padding: 60px 40px 80px;
+    border-top: 1px solid #f0e6e9;
+    font-size: 11px;
+    color: #000000;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.footer-manifesto {
+    flex: 1;
+    max-width: 480px;
+}
+
+.footer-manifesto p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #222222;
+}
+
+.footer-newsletter {
+    flex: 1;
+    max-width: 420px;
+}
+
+.newsletter-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+    font-size: 11px;
+    background-color: #ffffff;
+    outline: none;
+    color: #333333;
+}
+
+.newsletter-form button {
+    padding: 12px 24px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.privacy-note {
+    font-size: 9px;
+    color: #666666;
+    line-height: 1.4;
+}
+
+.privacy-note a {
+    color: #666666;
+    text-decoration: underline;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-col h4 {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 11px;
+}
+
+.footer-col ul li a:hover {
+    opacity: 0.6;
+}
+
+/* Responsif Layar Kecil */
+@media (max-width: 900px) {
+    .fragrance-grid, .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .split-section, .footer-top {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    .footer-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
